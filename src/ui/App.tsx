@@ -6,10 +6,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    //@ts-expect-error -electron is exposed via preload script
-    window.electron.subscribeStatistics(() => {
-      
-    });
+    window.electron.subscribeStatistics(() => {});
   }, []);
 
   return (
