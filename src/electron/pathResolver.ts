@@ -10,3 +10,7 @@ export function getPreloadPath(): string {
     "preload.cjs"
   );
 }
+
+export function getUIPath(): string {
+  return path.join(app.getAppPath(), "dist-react", "index.html");
+}
